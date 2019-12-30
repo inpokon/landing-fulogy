@@ -1,0 +1,32 @@
+@import "../../assets/scss/variables";
+.link {
+  display: block;
+  text-decoration: none;
+  color: $color-dark;
+  line-height: normal;
+  transition: color .3s;
+  &:hover {
+    color: $color-primary-light;
+  }
+  &.small {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &.middle {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &.big {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  &.primary {
+    color: $color-primary;
+  }
+  &.secondary {
+    color: $color-secondary;
+    &:hover {
+      color: $color-secondary-hover;
+    }
+  }
+}

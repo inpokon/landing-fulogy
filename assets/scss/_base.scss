@@ -1,0 +1,29 @@
+@import "./variables";
+html, body {
+	font-family: 'Muller', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: $color-dark;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.container {
+	padding: 0 $padding-container;
+	width: 100%;
+	margin: 0 auto;
+	height: inherit;
+	&.width50 {
+		padding: 0 $padding-container-width50;
+	}
+}
+
+body {
+	padding-bottom: 400px;
+}

@@ -1,0 +1,50 @@
+@import "../../assets/scss/variables";
+.arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #edf1f2;
+  background-color: $color-white;
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+  & > div {
+    width: 9px;
+    height: 13px;
+    & > div {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: inherit;
+        height: inherit;
+        fill: #767676;
+        transition: .3s;
+      }
+    }
+  }
+  &.left {
+    & > div {
+      transform: rotate(180deg);
+    }
+  }
+  &:hover {
+    box-shadow: 0 6px 18px rgba(26, 26, 26, 0.2);
+    border-color: $color-primary;
+    background-color: $color-primary;
+    & > div > div svg {
+      fill: $color-white;
+    }
+  }
+  &.disabled {
+    border: 2px solid #fafafa;
+    pointer-events: none;
+    & > div > div svg {
+      fill: #e4e4e4;
+    }
+  }
+}

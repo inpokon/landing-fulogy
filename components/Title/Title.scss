@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables";
+.title {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $color-dark;
+  &.white {
+    color: $color-white;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.right {
+    text-align: right;
+  }
+}

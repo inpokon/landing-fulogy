@@ -1,0 +1,53 @@
+.box-info {
+  padding-top: 41px;
+  padding-bottom: 31px;
+  background: url("/images/stars-bg.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 168px;
+  position: relative;
+  z-index: 1;
+  .title {
+    margin: 0;
+  }
+  &__desc {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      right: -746px;
+      top: 17%;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    bottom: -23px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    & > div {
+      width: inherit;
+      height: inherit;
+    }
+    svg {
+      width: inherit;
+      height: inherit;
+      transform: rotate(-90deg);
+      fill: #564392;
+    }
+  }
+}

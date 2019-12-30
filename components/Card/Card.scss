@@ -1,0 +1,46 @@
+@import "../../assets/scss/variables";
+.card {
+  border-radius: 2px;
+  border: 1px solid #efeef4;
+  background-color: #ffffff;
+  padding: 16px 14px 31px;
+  transition: .3s;
+  img {
+    border-radius: 2px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 28px;
+    margin-bottom: 25px;
+  }
+  &__desc {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 17px;
+    & > span {
+      font-size: 16px;
+    }
+  }
+  &__price {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    & >span {
+      color: $color-primary;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    box-shadow: 0 10px 25px #e3d1ff;
+  }
+}

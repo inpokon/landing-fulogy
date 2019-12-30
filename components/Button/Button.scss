@@ -1,0 +1,29 @@
+@import "../../assets/scss/variables";
+.btn {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  min-width: 254px;
+  letter-spacing: 0.4px;
+  transition: background-color .3s;
+  &.middle {
+    padding: 17px 28px 20px;
+    font-size: 16px;
+  }
+  &.secondary {
+    background-color: $color-secondary;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-secondary-hover;
+    }
+  }
+  &.default {
+    background-color: $color-secondary-default;
+    &:hover {
+      background-color: $color-secondary-default;
+    }
+  }
+}

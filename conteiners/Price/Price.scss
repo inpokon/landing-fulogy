@@ -1,0 +1,126 @@
+@import "../../assets/scss/variables";
+.price-wrap {
+  padding: 30px 0 20px;
+  background: url("/images/stars-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.price {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: $color-white;
+  .inverted-commas {
+    width: 225px;
+    height: 177px;
+    position: absolute;
+    top: -22px;
+    left: -26px;
+    & > div {
+      width: inherit;
+      height: inherit;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #322e5e;
+    }
+  }
+  .pointing-arrow {
+    width: 99px;
+    height: 74px;
+    transform: rotate(180deg);
+    & > div {
+      width: inherit;
+      height: inherit;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #413d8b;
+    }
+  }
+
+  &__info {
+    width: 33%;
+    padding-left: 103px;
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  &__desc {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    & > span {
+      color: $color-secondary;
+      font-weight: 700;
+    }
+  }
+  &__input {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+    & > span {
+      color: #e9eef1;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: 20px;
+    }
+  }
+  .btn {
+    margin-top: 37px;
+    margin-bottom: 0;
+  }
+  &__phone {
+    margin-top: 21px;
+    margin-bottom: 0;
+    & > span {
+      line-height: 24px;
+    }
+  }
+  &__social {
+    display: flex;
+    margin-top: 18px;
+    a {
+      text-decoration: none;
+      margin-right: 19px;
+      svg {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+  &__list {
+    width: 58%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      padding: 26px 0 40px;
+      &:nth-child(3n+3) {
+        width: 40%;
+      }
+    }
+  }
+  &__number {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

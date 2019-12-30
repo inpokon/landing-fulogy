@@ -1,0 +1,18 @@
+.established-wrap {
+  background-color: #f8f7fd;
+  padding-top: 56px;
+  padding-bottom: 41px;
+}
+.established {
+  &__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      width: 24%;
+    }
+  }
+}
